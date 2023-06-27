@@ -9,7 +9,7 @@
 #define FUNC    3
 #define MEDIA   4
 #define MOUSE   5
-#define WINNAV  6
+#define NUM     6
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -47,10 +47,10 @@
             label = "Default";
 
             bindings = <
-    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
-    &hm LGUI A   &hm LALT R   &hm LCTL S  &hs LSHIFT T  &kp G                                       &lt MOUSE M   &hs RSHIFT N &hm RCTL E    &hm RALT I   &hm RGUI O
+    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &kp U         &kp Y       &kp SQT
+    &hm LGUI A   &hm LALT R   &hm LCTL S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RCTL E    &hm RALT I  &hm RGUI O
     &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
-                                          &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
+                                    &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET &lt NUM BSPC &lt FUNC DEL
             >;
         };
 
@@ -58,10 +58,10 @@
             label = "Navigation";
 
             bindings = <
-    &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS
-    &kp HOME     &kp LEFT     &kp DOWN    &kp RIGHT     &kp END                                     &kp FSLH      &kp N4       &kp N5        &kp N6      &kp PLUS
-    &trans       &trans       &trans      &trans        &trans                                      &kp EQUAL     &kp N1       &kp N2        &kp N3      &kp N0
-                                          &trans        &trans       &kp TAB       &kp BSPC         &kp SPACE     &kp DOT
+    &none       &none       &none      &none        &none                                      &kp K_UNDO   &kp K_PASTE  &kp K_COPY    &kp K_CUT   &kp K_UNDO
+    &kp LGUI    &kp LALT    &kp LCTL   &kp LSHIFT   &none                                      &caps_word   &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT
+    &none       &none       &none      &none        &none                                      &kp INS      &kp HOME     &kp PG_DN     &kp PG_UP   &kp END
+                                       &none        &trans       &none          &kp RET        &kp BSPC     &kp DEL
             >;
         };
 
@@ -109,7 +109,7 @@
             >;
         };
 
-        winnav_layer {
+        num_layer {
             label = "Win Navigation";
 
             bindings = <
