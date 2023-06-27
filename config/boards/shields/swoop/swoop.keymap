@@ -16,28 +16,6 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_undo {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp Q>;
-        };
-        combo_semicolon {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp SEMI>;
-        };
-    };
-};
-
-/ {
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -52,12 +30,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
+
+
+/ {
 
     keymap {
         compatible = "zmk,keymap";
@@ -67,7 +48,7 @@
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
-    &hm LCTL A   &hm LGUI R   &hm LALT S  &hs LSHIFT T  &kp G                                       &lt MOUSE M   &hs RSHIFT N &hm RALT E    &hm RGUI I  &hm RCTL O
+    &hm LGUI A   &hm LALT R   &hm LCTL S  &hs LSHIFT T  &kp G                                       &lt MOUSE M   &hs RSHIFT N &hm RCTL E    &hm RALT I   &hm RGUI O
     &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
                                           &kp DEL       &lt NAV RET  &lt FUNC TAB  &lt MEDIA BSPC   &lt SYM SPACE &kp SQT
             >;
@@ -121,10 +102,10 @@
             label = "Mouse";
 
             bindings = <
-    &bootloader &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
-    &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
-    &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans
-                                        &trans      &trans          &trans           &trans          &trans      &trans
+    &bootloader  &trans       &trans       &trans       &trans                                           &trans       &trans       &trans       &trans       &trans
+    &trans       &trans       &trans       &trans       &trans                                           &trans       &trans       &trans       &trans       &trans
+    &trans       &trans       &trans       &trans       &trans                                           &trans       &trans       &trans       &trans       &trans
+                                              &trans       &trans           &trans           &trans           &trans       &trans
             >;
         };
 
