@@ -52,7 +52,7 @@
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &kp U         &kp Y       &kp SQT
-    &hm_l LGUI A   &hm_l LALT R   &hm_l LCTL S  &hs_shift_l LSHIFT T  &kp G                         &kp M         &hm_shift_r RSHIFT N &hm_r RCTL E    &hm_r RALT I  &hm_r RGUI O
+    &hm_l LGUI A   &hm_l LALT R   &hm_l LCTL S  &hm_shift_l LSHIFT T  &kp G                         &kp M         &hm_shift_r RSHIFT N &hm_r RCTL E    &hm_r RALT I  &hm_r RGUI O
     &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
                                     &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET &lt NUM BSPC &lt FUNC DEL
             >;
