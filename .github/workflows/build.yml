@@ -3,3 +3,9 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+    steps:
+    - name: Checkout code with submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive' # Fetches all submodules recursively.
