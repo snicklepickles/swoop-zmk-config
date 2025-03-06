@@ -1,0 +1,4 @@
+name: zmk-keyboard-swoop
+build:
+  settings:
+    board_root: .
