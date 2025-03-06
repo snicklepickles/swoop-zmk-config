@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "zmk-helpers/helper.h"
-#include "includes/settings.dtsi"
-#include "includes/behaviours_homerow_mods.dtsi"
+#include "/dts/settings.dtsi
+#include "/dts/behaviours_homerow_mods.dtsi"
 
 #define ___ &trans
 
