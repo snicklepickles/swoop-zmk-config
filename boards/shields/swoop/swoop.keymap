@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "zmk-helpers/helper.h"
-#include "/dts/settings.dtsi
+#include "/dts/settings.dtsi"
 #include "/dts/behaviours_homerow_mods.dtsi"
 
 #define ___ &trans
