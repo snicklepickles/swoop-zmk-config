@@ -25,28 +25,28 @@
         // https://github.com/urob/zmk-config#timeless-homerow-mods
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
+            display-name = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             bindings = <&kp>,  <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
 
         hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
+            display-name = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick_tap_ms = <175>;
-            global-quick-tap-ms = <150>;         // requires PR #1387
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
@@ -57,28 +57,28 @@
         // cause false negatives.
         hm_shift_l: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_FAST_LEFT";
+            display-name = "HOMEROW_MODS_FAST_LEFT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <175>;
-            // global-quick-tap-ms = <150>;         // requires PR #1387
+            quick-tap-ms = <175>;
+            // require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
         };
 
         hm_shift_r: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_FAST_RIGHT";
+            display-name = "HOMEROW_MODS_FAST_RIGHT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick_tap_ms = <175>;
-            // global-quick-tap-ms = <150>;         // requires PR #1387
+            quick-tap-ms = <175>;
+            // require-prior-idle-ms = <150>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             // hold-trigger-on-release;             // requires PR #1423
         };
