@@ -6,7 +6,7 @@
 - [urob's timeless homerow mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
 
 ## How to Flash
-1. Download `swoop_left-nice_nano_v2-zmk.uf2` and `swoop_right-nice_nano_v2-zmk.uf2` the from latest release.
+1. Download `swoop_left-nice_nano_v2-zmk.uf2` and `swoop_right-nice_nano_v2-zmk.uf2` from the [latest release](https://github.com/snicklepickles/swoop-zmk-config/releases).
 2. For each half:
     - Enter bootloader mode on the nice!nano by:
        - Double-tapping the reset button, or
