@@ -1,4 +1,4 @@
-# zmk-config
+# swoop-zmk-config
 [ZMK firmware](https://github.com/zmkfirmware/zmk/) config for the [Swoop MX](https://github.com/jimmerricks/swoop).
 
 ## Features
